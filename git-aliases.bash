@@ -5,19 +5,19 @@ alias g='git'; __git_complete g _git
 alias gcl='git clone'; __git_complete gcl _git_clone
 
 # git pull / git push
-alias gpl='git pull';                   __git_complete gpl   _git_pull
-alias gplr='git pull --rebase';         __git_complete gplr  _git_pull
-alias gplum='git pull upstream master'
+alias gl='git pull';                   __git_complete gpl   _git_pull
+alias glr='git pull --rebase';         __git_complete gplr  _git_pull
+alias glum='git pull upstream master'
 
-alias gpu='git push';                 __git_complete gpu   _git_push
-alias gput='git push --tags';         __git_complete gput  _git_push
-alias gpuf='git push --force';        __git_complete gpuf  _git_push
-alias gpuu='git push --set-upstream'; __git_complete gpuu  _git_push
-alias gpuo='git push origin'
-alias gpuom='git push origin master'
-alias gpuar='git remote | xargs -L1 git push'
+alias gp='git push';                 __git_complete gpu   _git_push
+alias gpt='git push --tags';         __git_complete gput  _git_push
+alias gpf='git push --force';        __git_complete gpuf  _git_push
+alias gpu='git push --set-upstream'; __git_complete gpuu  _git_push
+alias gpo='git push origin'
+alias gpom='git push origin master'
+alias gpar='git remote | xargs -L1 git push'
 
-alias gpp='git pull && git push'
+alias glp='git pull && git push'
 
 # git fetch
 alias gf='git fetch --all --prune';                    __git_complete gf   _git_fetch
@@ -37,8 +37,8 @@ alias grm='git rm'; __git_complete grm _git_rm
 alias gmv='git mv'; __git_complete gmv _git_mv
 
 # git status / git diff
-alias gs='git status';                      __git_complete gs  _git_status
-alias gss='git status --short';             __git_complete gss _git_status
+alias gst='git status';                      __git_complete gs  _git_status
+alias gsts='git status --short';             __git_complete gss _git_status
 alias gd='git diff';                        __git_complete gd  _git_diff
 alias gdw='git diff --word-diff';           __git_complete gdw  _git_diff
 alias gds='git diff --staged';              __git_complete gds _git_diff
@@ -53,11 +53,11 @@ alias gcm='git commit --verbose -m';       __git_complete gcm  _git_commit
 alias gci='git commit --interactive';      __git_complete gci  _git_commit
 
 # git stash
-alias gst='git stash';        __git_complete gst   _git_stash
-alias gstpu='git stash push'
-alias gstpo='git stash pop'
-alias gstd="git stash drop"
-alias gstl="git stash list"
+alias gsta='git stash';        __git_complete gst   _git_stash
+alias gstapu='git stash push'
+alias gstapo='git stash pop'
+alias gstad="git stash drop"
+alias gstal="git stash list"
 
 # git reset / git clean
 alias grst='git reset'; __git_complete grst _git_reset
@@ -74,7 +74,7 @@ alias gbdel='git branch --delete --force'; __git_complete gbdel _git_branch
 
 # git checkout
 alias gco='git checkout';         __git_complete gco  _git_checkout
-alias gcob='git checkout -b';     __git_complete gcob _git_checkout
+alias gcb='git checkout -b';     __git_complete gcob _git_checkout
 alias gct='git checkout --track'; __git_complete gct  _git_checkout
 
 # git cherrypick
